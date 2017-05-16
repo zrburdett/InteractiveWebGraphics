@@ -7,3 +7,11 @@ nav {
     margin: 0 auto;
     margin-top: 30px;
 }
+
+.branch {
+    fill: #543d15;
+}
+
+.bird {
+    fill: black;
+}
