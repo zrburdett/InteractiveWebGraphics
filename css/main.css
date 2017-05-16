@@ -24,6 +24,7 @@ nav {
     fill: black;
 }
 
+/* Set default square settings */
 .square {
 	width: 100px;
 	height: 100px;
@@ -31,6 +32,7 @@ nav {
     position: absolute;
 }
 
+/* Set default circle settings */
 .circle {
 	width: 100px;
 	height: 100px;
@@ -41,6 +43,7 @@ nav {
     position: absolute;
 }
 
+/* Set default triangle settings */
 .triangle {
 	width: 0;
 	height: 0;
@@ -50,31 +53,37 @@ nav {
     position: absolute;
 }
 
+/* Define the first shape position */
 #shape1 {
     left: 5%;
     top: 100px;
 }
 
+/* Define the second shape position */
 #shape2 {
     left: 25%;
     top: 100px;
 }
 
+/* Define the third shape position */
 #shape3 {
     left: 45%;
     top: 100px;
 }
 
+/* Define the fourth shape position */
 #shape4 {
     left: 65%;
     top: 100px;
 }
 
+/* Define the fifth shape position */
 #shape5 {
     left: 85%;
     top: 100px;
 }
 
+/* When the screen is smaller than 992px, shrink the shapes to 70px */
 @media (max-width: 992px) {
     .square {
         width: 70px;
@@ -96,6 +105,7 @@ nav {
     }
 }
 
+/* When the screen is smaller than 600px, shrink the shapes to 50px */
 @media (max-width: 600px) {
     .square {
         width: 50px;
