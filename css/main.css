@@ -10,6 +10,10 @@ nav {
     margin-top: 30px;
 }
 
+.shape-image {
+    min-height: 400px;
+}
+
 /* Set the default branch color to brown */
 .branch {
     fill: #543d15;
@@ -18,4 +22,97 @@ nav {
 /* Set the default bird color to black */
 .bird {
     fill: black;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: red;
+    position: absolute;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    position: absolute;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+    position: absolute;
+}
+
+#shape1 {
+    left: 5%;
+    top: 100px;
+}
+
+#shape2 {
+    left: 25%;
+    top: 100px;
+}
+
+#shape3 {
+    left: 45%;
+    top: 100px;
+}
+
+#shape4 {
+    left: 65%;
+    top: 100px;
+}
+
+#shape5 {
+    left: 85%;
+    top: 100px;
+}
+
+@media (max-width: 992px) {
+    .square {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .circle {
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        border-radius: 35px;
+    }
+    
+    .triangle {
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 70px solid red;
+    }
+}
+
+@media (max-width: 600px) {
+    .square {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .circle {
+        width: 50px;
+        height: 50px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+    }
+    
+    .triangle {
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid red;
+    }
 }
