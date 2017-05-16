@@ -1,17 +1,21 @@
+/* Change the default navigation bar color */
 nav {
     background-color: #8a0084;
 }
 
+/* Set the svg image to cover 80% of the page width, be in the center, and fall 30px below the bottom of the nav bar */
 .svg-image {
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
 }
 
+/* Set the default branch color to brown */
 .branch {
     fill: #543d15;
 }
 
+/* Set the default bird color to black */
 .bird {
     fill: black;
 }
