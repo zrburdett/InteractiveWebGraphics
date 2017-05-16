@@ -6,6 +6,12 @@ $( document ).ready(function(){
 
     // Counter variable
     var counter = 0;
+    
+    // Color channel variables
+    var randomRedChannel;
+    var randomGreenChannel;
+    var randomBlueChannel;
+    var randomColor;
 
     // Syntax to create a div with a unique id
     var nextDiv = ("<div id=\"circle" + counter + "\"></div>")
@@ -17,10 +23,19 @@ $( document ).ready(function(){
     $("body").click(function() {
         // Increase the counter
         counter += 1;
+        
+        // Randomize color channels
+        randomRedChannel = 1 + Math.floor(Math.random() * 255);
+        randomGreenChannel = 1 + Math.floor(Math.random() * 255);
+        randomBlueChannel = 1 + Math.floor(Math.random() * 255);
+        
+        // Formatting the color channel variables to create an rgb color string
+        randomColor = "rgb(" + randomRedChannel + "," + randomGreenChannel + "," + randomBlueChannel + ")";
 
         // Set up the string to create a unique div id
         // Making sure it is a circle with a width and height of 20px
-        nextDiv = ("<div id=\"circle" + counter + "\" style=\"width: 20px; height: 20px; background: red; position: absolute; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;\"></div>")
+        // Use the randomColor variable to change the color of each circle
+        nextDiv = ("<div id=\"circle" + counter + "\" style=\"width: 20px; height: 20px; background: " + randomColor + "; position: absolute; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;\"></div>")
 
         // Append a new div into the svg-image div
         $('.svg-image').append(nextDiv);
