@@ -71,7 +71,7 @@
                 // Formatting the color channel variables to create an rgb color string
                 randomColor = "rgb(" + randomRedChannel + "," + randomGreenChannel + "," + randomBlueChannel + ")";
                 
-                console.log(randomColor);
+                console.log("Changing bird color to " + randomColor);
                 
                 $('.bird').css('fill', randomColor);
             });
@@ -91,6 +91,8 @@
             
             // Formatting the color channel variables to create an rgb color string
             mouseColor = "rgb(" + mouseRedChannel + "," + mouseGreenChannel + "," + mouseBlueChannel + ")";
+            
+            console.log("Changing background color to " + mouseColor);
             
             // Change the body background color to the generated color
             $('body').css('background-color', mouseColor);
